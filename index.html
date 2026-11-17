@@ -1,46 +1,48 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Emmanuel Burnett’s graphic design résumé and selected work.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Emmanuel Burnett's graphic design résumé and selected projects.">
 <title>Emmanuel Burnett | Graphic Design</title>
 <style>
-:root{--ink:#152d27;--paper:#f5f1e7;--lime:#bfe36d;--muted:#43574e;--line:#b9c0b2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}.wrap{width:min(1040px,calc(100% - 36px));margin:auto}header{background:var(--ink);color:var(--paper)}nav{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #f5f1e74d}a{color:inherit;text-underline-offset:.25em}button{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:99px;padding:7px 14px;cursor:pointer}button:hover{color:var(--ink);background:var(--lime)}:focus-visible{outline:2px solid currentColor;outline-offset:4px}.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:clamp(30px,7vw,85px) 0}.role,h2{font-size:.76rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.role{color:var(--lime)}h1{font:400 clamp(38px,10vw,111px)/.9 Georgia,serif;letter-spacing:-.065em;margin:12px 0 0}h1 span{display:block;animation:rise .65s ease-out both}h1 span+span{font-style:italic;animation-delay:.1s}.mark{width:clamp(44px,16vw,155px);color:var(--lime);animation:rise .7s .16s ease-out both}@keyframes rise{from{transform:translateY(18px);opacity:0}}section{padding:23px 0;border-bottom:1px solid var(--line)}h2{margin:0 0 10px;color:var(--muted)}h3{font:400 clamp(23px,4vw,33px)/1.15 Georgia,serif;margin:0 0 4px}p{margin:0}p+p{margin-top:5px}.project{background:#e7ebd9;padding:clamp(16px,4vw,30px);border-left:4px solid;transition:transform .2s}.project:hover{transform:translateY(-2px)}figure{margin:0 0 18px}figure img{display:block;width:min(100%,520px);height:auto;margin:auto}footer{padding:16px 0}.detail{color:var(--muted)}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.project:hover{transform:none}}@page{size:letter;margin:.6in}@media print{body,header,.project{color:#152d27;background:white}body{font-size:10.5pt}.wrap{width:100%}nav,figure,footer{display:none}.hero{padding:0 0 12pt;border-bottom:1px solid var(--line)}.role,.mark{color:var(--ink)}.mark{width:.52in}h1{font-size:40pt}h1 span{display:inline}h3{font-size:17pt}section{padding:10pt 0;break-inside:avoid}.project{padding:0;border:0}*{animation:none!important;transition:none!important}}
-figure.owl{margin-top:24px}figure+figure{margin-top:22px}figure:has(+.credit) img{width:100%}figcaption{text-align:center;margin-top:6px;color:var(--muted);font-size:.85rem}.credit{font-size:.82rem;color:var(--muted)}.decks{margin-top:25px}.decks ul{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px}.decks a{display:flex;justify-content:space-between;gap:8px;padding:12px;border:1px solid var(--line);text-decoration:none}.decks a:hover{background:#e7ebd9}.decks span{white-space:nowrap;font-size:.82rem;color:var(--muted)}@media print{.credit,.decks{display:none}}
-
-/* Geometric framing and short, one-time motion. */
-.nav-links{display:flex;gap:24px}.nav-links a{text-decoration:none}.nav-links a:hover{text-decoration:underline}
-button{border-radius:0}.hero{position:relative;isolation:isolate}.hero:after{content:"";position:absolute;inset:8% 0 8% auto;width:min(33%,300px);z-index:-1;pointer-events:none;background:repeating-linear-gradient(135deg,transparent 0 17px,#bfe36d24 17px 18px);clip-path:polygon(36% 0,100% 0,100% 64%,64% 100%,0 100%,0 36%);animation:geometry-in 650ms ease-out both}
-@keyframes geometry-in{from{clip-path:polygon(100% 0,100% 0,100% 0,100% 100%,100% 100%,100% 100%)}}
-.mark{margin-right:clamp(8px,2vw,24px);animation:mark-in 630ms 100ms cubic-bezier(.2,.7,.25,1) both}
-@keyframes mark-in{from{opacity:0;transform:translateY(10px) scale(.92)}}
-#work,#experience{scroll-margin-top:1rem}
-.project{border-left:0;border-top:4px solid var(--ink);transition:none}.project:hover{transform:none}
-.project figure a{display:block;overflow:hidden}.project figure img{transition:transform 320ms ease}.project figure a:hover img,.project figure a:focus-visible img{transform:scale(1.025)}
-.decks a{position:relative;transition:background-color 180ms ease,border-color 180ms ease}.decks a:hover,.decks a:focus-visible{background:var(--lime);border-color:var(--ink)}
-.resume-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;padding-bottom:24px}
-.resume-grid section:last-child{border-bottom:1px solid var(--line)}
-@media(max-width:620px){.resume-grid{grid-template-columns:1fr}.nav-links{gap:14px}.hero:after{width:32%}}
-@media(prefers-reduced-motion:reduce){.project figure a:hover img,.project figure a:focus-visible img{transform:none}}
-@media print{.hero:after{display:none}.mark{margin-right:0}.resume-grid{display:block;padding:0}.resume-grid section:last-child{border:0}.project{border:0}.project figure img{transform:none}}
+:root{--paper:#f5f3eb;--ink:#192822;--line:#b9bdb1;--lime:#cfeb86;--quiet:#46584f}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}h1,h2,h3,p,figure{margin:0}a{color:inherit;text-underline-offset:.2em}a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.wrap{width:min(1080px,calc(100% - 48px));margin:auto}header{background:var(--ink);color:var(--paper)}nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #f5f3eb59}.nav-links{display:flex;gap:24px}nav a{text-decoration:none}nav a:hover{text-decoration:underline}button{font:inherit;font-weight:650;background:var(--lime);color:var(--ink);border:0;padding:8px 14px;cursor:pointer}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;padding:clamp(26px,5vw,62px) 0}.eyebrow,h2{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750}.eyebrow{color:var(--lime);margin-bottom:8px}h1{font-size:clamp(34px,7.5vw,94px);letter-spacing:-.07em;line-height:.94;animation:arrive 420ms ease-out both}.tile{width:clamp(55px,13vw,145px);aspect-ratio:1;display:grid;place-items:center;background:var(--lime);color:var(--ink);clip-path:polygon(0 0,80% 0,100% 20%,100% 100%,0 100%);animation:arrive 450ms ease-out both}.tile svg{width:58%}@keyframes arrive{from{opacity:0;transform:translateY(8px)}}
+.resume{margin-top:32px;border:1px solid var(--line)}.section-head{padding:10px 16px;background:var(--ink);color:var(--paper)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.cell{padding:16px;min-width:0;border-bottom:1px solid var(--line)}.cell:nth-child(odd){border-right:1px solid var(--line)}.cell:nth-last-child(-n+2){border-bottom:0}h3{font-size:1rem;line-height:1.3;margin-bottom:6px}.cell p+p{margin-top:4px}.quiet,figcaption{color:var(--quiet);font-size:.9rem}.wide{grid-column:1/-1}.cell.wide{border-right:0;border-bottom:1px solid var(--line)}
+.work{margin:32px 0 40px}.gallery{display:grid;grid-template-columns:1fr 1.35fr;gap:12px;margin-top:12px}.gallery figure{border:1px solid var(--line);padding:10px;background:white;display:grid;grid-template-rows:1fr auto}.gallery a{display:grid;place-items:center;overflow:hidden;min-height:0}.gallery img{display:block;width:100%;height:100%;max-height:310px;object-fit:contain;transition:transform 240ms ease}.gallery a:hover img,.gallery a:focus-visible img{transform:scale(1.025)}figcaption{padding-top:8px}.project-caption{margin:12px 0}.files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0;margin:12px 0 0;list-style:none}.files a{display:flex;justify-content:space-between;gap:6px;border:1px solid var(--line);padding:8px 11px;text-decoration:none;transition:background-color 160ms ease}.files a:hover,.files a:focus-visible{background:var(--lime)}.files small{white-space:nowrap}
+@media(max-width:560px){.wrap{width:calc(100% - 28px)}.grid,.files{grid-template-columns:1fr}.cell:nth-child(odd){border-right:0}.cell:nth-last-child(2){border-bottom:1px solid var(--line)}.gallery{grid-template-columns:1fr}.resume,.work{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.gallery a:hover img,.gallery a:focus-visible img{transform:none}}
+@page{size:letter;margin:.55in}@media print{body,header,.section-head,.tile{color:black;background:white}.wrap{width:100%}nav,.work{display:none}.hero{padding:0 0 14pt}.eyebrow{color:black}h1{font-size:34pt}.tile{width:.55in}.resume{margin-top:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cell{break-inside:avoid;padding:10pt;font-size:10pt}.quiet{font-size:9pt;color:black}*{animation:none!important;transition:none!important}}
 </style>
-<header><div class="wrap"><nav aria-label="Portfolio"><div class="nav-links"><a href="#work">Work</a><a href="#experience">Résumé</a></div><button id="print" type="button">Print / Save PDF</button></nav>
-<div class="hero"><div><p class="role">Graphic Design · Identity &amp; Illustration</p><h1><span>Emmanuel</span> <span>Burnett</span></h1></div>
-<svg class="mark" viewBox="0 0 120 104" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M0 0H92C108 0 120 12 120 28C120 37 116 45 110 50C117 55 120 63 120 74C120 91 108 104 92 104H0Z M18 18H54V41H18Z M18 59H54V86H18Z M72 18H90C97 18 102 23 102 30S97 41 90 41H72Z M72 59H90C98 59 103 65 103 73S98 86 90 86H72Z"/></svg></div></div></header>
+</head>
+<body>
+<header><div class="wrap">
+<nav aria-label="Portfolio navigation"><div class="nav-links"><a href="#resume">Résumé</a><a href="#work">Selected work</a></div><button id="print" type="button">Print / Save PDF</button></nav>
+<div class="hero"><div><p class="eyebrow">Graphic Design · Identity &amp; Illustration</p><h1>Emmanuel Burnett</h1></div>
+<div class="tile"><svg viewBox="0 0 120 104" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M0 0H92C108 0 120 12 120 28C120 37 116 45 110 50C117 55 120 63 120 74C120 91 108 104 92 104H0Z M18 18H54V41H18Z M18 59H54V86H18Z M72 18H90C97 18 102 23 102 30S97 41 90 41H72Z M72 59H90C98 59 103 65 103 73S98 86 90 86H72Z"/></svg></div></div>
+</div></header>
 <main class="wrap">
-<section aria-labelledby="work"><h2 id="work">Selected Work</h2><article class="project"><h3>Ex Libris</h3><p class="detail">Bookplate Illustration</p><p>Designed a playing-card-inspired bookplate featuring a mirrored owl. Used repeated geometric linework and black-and-white contrast to separate the owl from the patterned background.</p><figure class="owl"><a href="./assets/ex-libris-cover.webp"><img src="./assets/ex-libris-cover.webp" alt="Black-and-white Ex Libris owl bookplate in playing-card format"></a><figcaption>Ex Libris cover</figcaption></figure><figure><a href="./assets/ex-libris-study.webp"><img src="./assets/ex-libris-study.webp" alt="Ex Libris alternate view, orientation study, and rotated view" loading="lazy"></a><figcaption>Alternate view, orientation study, and rotated view</figcaption></figure><p class="credit">Illustration by Emmanuel Burnett · AI-assisted presentation images</p></article><div class="decks"><h3>Project Presentations</h3><ul><li><a href="./assets/brand.pdf">Major Brand Face-Lift <span>View PDF ↗</span></a></li>
-<li><a href="./assets/better.pdf">Make It Better <span>View PDF ↗</span></a></li>
-<li><a href="./assets/logo.pdf">Logo Warmup <span>View PDF ↗</span></a></li>
-<li><a href="./assets/flags.pdf">Three Flags <span>View PDF ↗</span></a></li></ul></div></section>
-<div class="resume-grid">
-<section aria-labelledby="experience"><h2 id="experience">Design Experience</h2><h3>Freelance Graphic Designer</h3><p>Designed logos for small businesses while completing a BFA in Graphic Design.</p></section>
-<section aria-labelledby="reference"><h2 id="reference">Business Reference</h2><p><strong>Apollo Threads</strong></p><p><a href="https://apollo-threads.com/">apollo-threads.com ↗</a></p></section>
-<section aria-labelledby="skills"><h2 id="skills">Design Skills</h2><p>Adobe Illustrator · Adobe Photoshop · Adobe InDesign</p><p>Logo design · Illustration · Photography<br>HTML · CSS · CSS animation</p></section>
-<section aria-labelledby="education"><h2 id="education">Education</h2><p><strong>Bachelor of Fine Arts in Graphic Design</strong></p><p>Mississippi College · Clinton, MS · Expected May 2027</p></section>
-<section aria-labelledby="awards"><h2 id="awards">Selected Awards</h2><p><strong>State Art Show</strong> · Second and third place, 2021</p><p><strong>Hinds Community College Student Art Gallery</strong> · Second place, 2021</p></section>
+<section class="resume" aria-labelledby="resume"><h2 class="section-head" id="resume">Résumé</h2>
+<div class="grid">
+<div class="cell wide" id="experience"><h3>Experience</h3><p><strong>Freelance Graphic Designer</strong> · Designed logos for small businesses.</p></div>
+<div class="cell"><h3>Education</h3><p><strong>BFA, Graphic Design</strong></p><p class="quiet">Mississippi College · Expected May 2027</p></div>
+<div class="cell"><h3>Skills</h3><p>Logo design, illustration, photography</p><p class="quiet">Illustrator, Photoshop, InDesign · HTML, CSS, CSS animation</p></div>
+<div class="cell"><h3>Selected Awards</h3><p>State Art Show · 2nd and 3rd, 2021</p><p>Hinds Community College Student Art Gallery · 2nd, 2021</p></div>
+<div class="cell"><h3>Business Reference</h3><p><strong>Apollo Threads</strong></p><p><a href="https://apollo-threads.com/">apollo-threads.com</a> · <a href="tel:+16018325812">601-832-5812</a></p></div>
+</div></section>
+<section class="work" aria-labelledby="work"><h2 class="section-head" id="work">Selected Work</h2>
+<div class="project-caption"><h3>Ex Libris</h3><p>Playing-card bookplate featuring a mirrored owl.</p><p class="quiet">Illustration by Emmanuel Burnett · AI-assisted presentation images</p></div>
+<div class="gallery">
+<figure><a href="./assets/ex-libris-cover.webp"><img src="./assets/ex-libris-cover.webp" alt="Ex Libris owl bookplate cover" loading="lazy"></a><figcaption>Cover</figcaption></figure>
+<figure><a href="./assets/ex-libris-study.webp"><img src="./assets/ex-libris-study.webp" alt="Owl bookplate shown in three orientations" loading="lazy"></a><figcaption>Orientation study</figcaption></figure>
 </div>
-</main>
-<script>
-  document.getElementById("print").addEventListener("click", () => window.print());
-
-</script>
-</html>
+<ul class="files" aria-label="Project presentations">
+<li><a href="./assets/brand.pdf">Major Brand Face-Lift<small>PDF ↗</small></a></li>
+<li><a href="./assets/better.pdf">Make It Better<small>PDF ↗</small></a></li>
+<li><a href="./assets/logo.pdf">Logo Warmup<small>PDF ↗</small></a></li>
+<li><a href="./assets/flags.pdf">Three Flags<small>PDF ↗</small></a></li>
+</ul></section></main>
+<script>document.getElementById("print").addEventListener("click",()=>window.print());</script>
+</body></html>
