@@ -15,15 +15,27 @@
 @media(max-width:560px){.wrap{width:calc(100% - 28px)}.grid,.files{grid-template-columns:1fr}.cell:nth-child(odd){border-right:0}.cell:nth-last-child(2){border-bottom:1px solid var(--line)}.gallery{grid-template-columns:1fr}.resume,.work{margin-top:22px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.gallery a:hover img,.gallery a:focus-visible img{transform:none}}
 @page{size:letter;margin:.55in}@media print{body,header,.section-head,.tile{color:black;background:white}.wrap{width:100%}nav,.work{display:none}.hero{padding:0 0 14pt}.eyebrow{color:black}h1{font-size:34pt}.tile{width:.55in}.resume{margin-top:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cell{break-inside:avoid;padding:10pt;font-size:10pt}.quiet{font-size:9pt;color:black}*{animation:none!important;transition:none!important}}
+.nav-links{flex-wrap:wrap;column-gap:24px;row-gap:6px}
+.featured-art{margin-bottom:0}
+.featured-art h3{font-size:clamp(1.25rem,3vw,1.75rem)}
+.featured-art .gallery img{max-height:380px}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-<nav aria-label="Portfolio navigation"><div class="nav-links"><a href="#resume">Résumé</a><a href="#work">Selected work</a></div><button id="print" type="button">Print / Save PDF</button></nav>
+<nav aria-label="Portfolio navigation"><div class="nav-links"><a href="#resume">Résumé</a><a href="#featured-art">Featured art</a><a href="#work">Selected work</a></div><button id="print" type="button">Print / Save PDF</button></nav>
 <div class="hero"><div><p class="eyebrow">Graphic Design · Identity &amp; Illustration</p><h1>Emmanuel Burnett</h1></div>
 <div class="tile"><svg viewBox="0 0 120 104" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M0 0H92C108 0 120 12 120 28C120 37 116 45 110 50C117 55 120 63 120 74C120 91 108 104 92 104H0Z M18 18H54V41H18Z M18 59H54V86H18Z M72 18H90C97 18 102 23 102 30S97 41 90 41H72Z M72 59H90C98 59 103 65 103 73S98 86 90 86H72Z"/></svg></div></div>
 </div></header>
 <main class="wrap">
+<section class="work featured-art" aria-labelledby="featured-art">
+<h2 class="section-head" id="featured-art">Featured Art</h2>
+<div class="project-caption"><h3>Ex Libris</h3><p>A mirrored owl illustrated as a playing-card bookplate, with three orientations exploring how the composition changes when rotated.</p></div>
+<div class="gallery">
+<figure><a href="./assets/ex-libris-cover.webp"><img src="./assets/ex-libris-cover.webp" alt="Ex Libris owl bookplate cover" loading="lazy"></a><figcaption>Finished owl card</figcaption></figure>
+<figure><a href="./assets/ex-libris-study.webp"><img src="./assets/ex-libris-study.webp" alt="Owl bookplate shown in three orientations" loading="lazy"></a><figcaption>Orientation study</figcaption></figure>
+</div>
+</section>
 <section class="resume" aria-labelledby="resume"><h2 class="section-head" id="resume">Résumé</h2>
 <div class="grid">
 <div class="cell wide" id="experience"><h3>Experience</h3><p><strong>Freelance Graphic Designer</strong> · Designed logos for small businesses.</p></div>
@@ -33,11 +45,6 @@
 <div class="cell"><h3>Business Reference</h3><p><strong>Apollo Threads</strong></p><p><a href="https://apollo-threads.com/">apollo-threads.com</a> · <a href="tel:+16018325812">601-832-5812</a></p></div>
 </div></section>
 <section class="work" aria-labelledby="work"><h2 class="section-head" id="work">Selected Work</h2>
-<div class="project-caption"><h3>Ex Libris</h3><p>Playing-card bookplate featuring a mirrored owl.</p><p class="quiet">Illustration by Emmanuel Burnett</p></div>
-<div class="gallery">
-<figure><a href="./assets/ex-libris-cover.webp"><img src="./assets/ex-libris-cover.webp" alt="Ex Libris owl bookplate cover" loading="lazy"></a><figcaption>Cover</figcaption></figure>
-<figure><a href="./assets/ex-libris-study.webp"><img src="./assets/ex-libris-study.webp" alt="Owl bookplate shown in three orientations" loading="lazy"></a><figcaption>Orientation study</figcaption></figure>
-</div>
 <ul class="files" aria-label="Project presentations">
 <li><a href="./assets/small-business-design-studies.pdf">Small Business Design Studies<small>PDF ↗</small></a></li>
 <li><a href="./assets/brand.pdf">Major Brand Face-Lift<small>PDF ↗</small></a></li>
