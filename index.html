@@ -19,6 +19,10 @@
 .featured-art{margin-bottom:0}
 .featured-art h3{font-size:clamp(1.25rem,3vw,1.75rem)}
 .featured-art .gallery img{max-height:380px}
+/* Isolate the right-hand card in the 1450 by 725 orientation study, then turn it clockwise. */
+.rotated-card{position:relative;align-self:center;width:100%;aspect-ratio:596 / 432}
+.rotated-card-crop{position:absolute;top:50%;left:50%;width:72.4832%;aspect-ratio:432 / 596;overflow:hidden;transform:translate(-50%,-50%) rotate(90deg)}
+.featured-art .gallery .rotated-card img{position:absolute;left:-224.537%;top:-6.0403%;width:335.6481%;height:auto;max-height:none}
 </style>
 </head>
 <body>
@@ -32,7 +36,10 @@
 <h2 class="section-head" id="featured-art">Featured Art</h2>
 <div class="project-caption"><h3>Ex Libris</h3><p>A mirrored owl illustrated as a playing-card bookplate, with three orientations exploring how the composition changes when rotated.</p></div>
 <div class="gallery">
-<figure><a href="./assets/ex-libris-cover.webp"><img src="./assets/ex-libris-cover.webp" alt="Ex Libris owl bookplate cover" loading="lazy"></a><figcaption>Finished owl card</figcaption></figure>
+<figure>
+<div class="rotated-card"><div class="rotated-card-crop"><img src="./assets/ex-libris-study.webp" alt="The rightmost Ex Libris owl card from the orientation study, turned 90 degrees clockwise" loading="lazy"></div></div>
+<figcaption>Rotated view · 90° clockwise</figcaption>
+</figure>
 <figure><a href="./assets/ex-libris-study.webp"><img src="./assets/ex-libris-study.webp" alt="Owl bookplate shown in three orientations" loading="lazy"></a><figcaption>Orientation study</figcaption></figure>
 </div>
 </section>
